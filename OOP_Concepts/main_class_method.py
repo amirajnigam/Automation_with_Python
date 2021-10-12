@@ -26,3 +26,8 @@ print(harry.salary)
 Employee.change_increment(3)
 harry.increase()
 print(harry.salary)
+
+
+#Why we need class method?
+#Ans: Because we don't want to pass the object to the fucntion just because we want to change one variable(increment) of the class. So, we created one method (change_increment()) which doesn't take object as
+#     argument, and simply take class as an argument and update its variable.
