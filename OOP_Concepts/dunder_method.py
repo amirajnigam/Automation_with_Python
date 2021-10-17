@@ -4,7 +4,7 @@ class Employee:
     increment = 1.5                                                
     no_of_employee = 0
 
-    def __init__(self, fname, lname, salary):    
+    def __init__(self, fname, lname, salary):                                   #dunder __init__ is a special method/constructor 
         self.fname = fname                      
         self.lname = lname
         self.salary = salary
@@ -30,18 +30,22 @@ class Employee:
         else:
             return True
 
-class Programmer(Employee):                                                                 #Progammer class has inherited all the variables and method of Employee class
-    #We are changing the constructor for the Programmer class
-    def __init__(self, fname, lname, salary, proglang, exp):
-        super().__init__(fname, lname, salary)                                              #super.__init__() call the constructor(__init__) of the Parent class
-        self.proglang = proglang
-        self.exp = exp
+    def __add__(self, other):                                                       #dunder method or magic function
+        return self.salary + other.salary
 
-    def increase(self):                                                                                        
-        self.salary = int(self.salary * (self.increment + 0.2))  
+    def __repr__(self):                                                             #dunder method or magic function
+        return 'Employee({},{},{})'.format(self.fname, self.lname, self.salary)
+
+    def __str__(self):                                                              #dunder method or magic function
+        return 'The name of employee is {}'.format(self.fname)
 
 
-harry = Programmer('harry','Jakson', 99000, 'Python','5 years')
-print(harry.exp)
-print(harry.proglang)
-help(Programmer)                                                                              #help will give all the details of the class
+harry = Employee('harry', 'jakson', 99000)
+rohan = Employee('rohan', 'agarwal', 1000000 )
+
+#sprint(harry + rohan)
+
+#print(repr(harry))
+
+print(str(harry))
+
