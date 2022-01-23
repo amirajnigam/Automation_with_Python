@@ -1,0 +1,9 @@
+1. A diuvide-by-zero error happens when python divides a number by zero
+2. Errors cause the program to crash.
+3. An error that happens inside a try block will cause code in the except block to execute. That code can handle the error or display a message to the user so that  the program can keep going.
+
+
+
+Q. why try and except required, we can use if else to do the same job?
+Ans. if we get an  error or exception, the entire program will crash. We don't want this ti happen in real world scenario. Instead we
+     want the program to detect the error handle them and then continue to run.

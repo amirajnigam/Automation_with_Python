@@ -1,0 +1,25 @@
+1. functions are like mini-program inside your program.
+2. The main point of function is to get rid of duplicate code
+3. The def statement defines a function.
+4. The input of function are arguments(which we mention during calling a function). The output is the return value.
+5. The parameters are the variables in between the functions paranthesis in the def statement.
+6. The return value is specified using the return statement.
+7. Every function has a return value. if your function doesn't have return statement, the default return value is none.
+8. Keyword arguments to functions are usually for optional arguments. The print() function has keyword arguments end and sep.
+
+
+
+******************************Global and Local Scope*****************************************
+1. A scope can be thought of as an area of the source code, and as a container of variables.
+2. The global scope is code outside of all functions. Variables assigned here are global variables. The global scope is created when the program starts and is destroyed when the program terminates.
+2. Each function's code is in its own local scope. variables assigned here are local variables/ The local scope is created when a function is called and all the variables just assigned during this fuction call exist within that local scope when the function returns the local scope is destroyed and these variables are forgotten. 
+3. Code in global scope cannot use any local variables.
+4. Code in local scope can access global variables.
+5. Code in one function's local scope cannot use variables in another function local scope.
+6. We can use the same name for different variables if they are in different scopes.
+7. If there is an assignment statement for a variable in a function,  that variable is a local variable.
+
+
+Q. why do we have scope at all? Wouldn't it would be easire if we have global scope only?
+Ans. The benifit the local scope provide that it seperate a functioncode from rest of the program, if something is going wrong because a variable has some bad values there's only a limited area of the program we have to check for this bug.
+     if something is going wrong in the global scope because of a bad variable value you only have to check the code in the global scope and if something is going wrong inside of a function because of a bad variable you only have to check the code inside the function.
