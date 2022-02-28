@@ -1,0 +1,2 @@
+spam.sort()
+# print(spam)

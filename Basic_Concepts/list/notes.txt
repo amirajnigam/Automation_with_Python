@@ -7,3 +7,27 @@
 7. The slice has two indexes. The new list's items start at the first index and go up to, but doesn't include the second index
 8. The len() function, concatenation, and replication work the same way with lists that they do with strings.
 9. you can convert a value into a list by passing it to the list() function.
+
+
+=================================================================================================================================
+
+For loop in list
+
+1. For loop technically iterate over the values in the list.
+2. The range() function returns a list-like value, which can be passed to the list()function if you need an actual list value.
+3. Variables can swap their values using multiple assignment
+4. Augmented assignment operators like += are used as shortcuts
+
+=================================================================================================================================
+
+Methods
+
+1. Methods are functions that are called on values
+2. The index() list method returns the index of an item in the list
+3. The append() list method adds a value to the end of a list
+4. The insert() list method adds a value inside anywhere in the list.
+5. The remove() list method removes an item, specified by the value, from a list.
+6. The sort() list method sorts the items in a list
+7. The sort() method's reverse = True keyword argument can sort in reverse order.
+8. Sorting happens in "ASCII-betical" orderr. to sort normally, pass key = str.lower.
+9. These list methods operate on the list "in place", rather than returning a new list value
