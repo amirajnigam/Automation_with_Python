@@ -31,3 +31,15 @@ Methods
 7. The sort() method's reverse = True keyword argument can sort in reverse order.
 8. Sorting happens in "ASCII-betical" orderr. to sort normally, pass key = str.lower.
 9. These list methods operate on the list "in place", rather than returning a new list value
+
+================================================================================================================================
+
+Similarity between list and string
+
+1. Strings can do a lot of the same things lists can do, but strings are immutable.
+2. Immutable values like strings and tuples cannot be modified "in place".
+3. Mutable values like lists can be modified in place.
+4. Variables don't contain lists, they contain references to lists.
+5. When passing a list argument to a function, you are actually passing a list reference.
+6. Changes made to a list in a function will affect the list outside the function.
+7. The \ line continuation character can be used to stretch Python instruction across multiple lines.
